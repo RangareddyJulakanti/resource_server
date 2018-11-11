@@ -1,0 +1,25 @@
+spring:
+    datasource:
+        hikari:
+            connection-test-query: SELECT 1 FROM DUAL
+            minimum-idle: 1
+            maximum-pool-size: 5
+            jdbc-url: jdbc:mysql://localhost/sys
+            username: root
+            password: root
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost/sys
+        jdbcUrl: jdbc:mysql://localhost/sys
+        username: root
+        password: root
+        initialization-mode: always
+        url: jdbc:mysql://localhost/sys
+    jpa:
+      hibernate:
+        ddl-auto: update
+# --- server
+server:
+  port: 8083
+
+
+
